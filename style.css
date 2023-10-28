@@ -34,13 +34,13 @@ ul, ol{
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-
     transition: 0.3s;
 }
 
 #menu-navegacao li a:hover{
     border-bottom: 2px solid #fff;
 }
+
 
 main{    
     display:flex;
@@ -49,15 +49,17 @@ main{
 }
 
 section{
+    max-width: 100%;
+    width: 100%;
     padding: 45px 30px;
-    margin:auto;
-    width: 960px;
     
 }
 
 .subsection{
     background-color: #dbd9d9;
     width: 100%;
+    overflow: auto;
+    padding: 10px;
     }
 
     h1{
@@ -75,11 +77,13 @@ section{
 
     h2,h4{
         color: #837f85;
+        
     }
 
     section ul{
-        max-width: 760px;
+        max-width: 800px;
         margin: auto;
+
     }
 
 .foto-perfil{
@@ -122,15 +126,8 @@ footer {
 
 
     @media (max-width: 768px) {
-        #menu-navegacao li a {
-            margin-bottom: 10px;
-        }
-    }
-    
-
-    @media (max-width: 768px) {
         #menu-navegacao {
-            flex-direction: column;
-            gap: 10px;
+            display: none; 
         }
+    
     }
