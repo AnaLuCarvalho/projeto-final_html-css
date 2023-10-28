@@ -42,6 +42,7 @@ ul, ol{
 }
 
 
+
 main{    
     display:flex;
     flex-direction: column;
@@ -49,17 +50,15 @@ main{
 }
 
 section{
-    max-width: 100%;
     width: 100%;
     padding: 45px 30px;
-    
+    margin:auto;
 }
 
 .subsection{
     background-color: #dbd9d9;
     width: 100%;
-    overflow: auto;
-    padding: 10px;
+    padding: 40px;
     }
 
     h1{
@@ -81,17 +80,17 @@ section{
     }
 
     section ul{
-        max-width: 800px;
+        max-width: 760px;
         margin: auto;
 
     }
 
 .foto-perfil{
-  width: 100%;
-  max-width: 200px;
-  border-radius: 50%;
-  border: 5px solid #be89cb;
-  padding: 5px;
+width: 100%;
+max-width: 200px;
+border-radius: 50%;
+border: 5px solid #be89cb;
+padding: 5px;
 }
 
 .foto-perfil:hover{
@@ -107,7 +106,7 @@ section{
 
 #contato li{
     margin: 4px 0;
-    padding: 10px 20px;
+    padding: 0 15px;
     color:#edeaea;    
 }
 
@@ -125,9 +124,17 @@ footer {
     }
 
 
+    
+    @media (max-width: 768px) {
+        #menu-navegacao li a {
+            margin-bottom: 10px;
+        }
+    }
+    
+
     @media (max-width: 768px) {
         #menu-navegacao {
-            display: none; 
+            flex-direction:row;
+            gap: 30px;
         }
-    
     }
